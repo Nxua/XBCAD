@@ -1,0 +1,185 @@
+/* General container styling */
+.task-details-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Task title */
+  .task-details-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4fa94d;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Task description */
+  .task-details-container p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Label styling */
+  .task-details-container p span.label {
+    font-weight: bold;
+    color: #4fa94d;
+    margin-right: 0.5rem;
+  }
+  
+  /* Priority highlighting */
+  .task-priority {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
+  .task-priority.low {
+    background-color: #3498db; /* Blue */
+  }
+  
+  .task-priority.medium {
+    background-color: #f1c40f; /* Yellow */
+  }
+  
+  .task-priority.high {
+    background-color: #e67e22; /* Orange */
+  }
+  
+  .task-priority.urgent {
+    background-color: #e74c3c; /* Red */
+  }
+  
+  /* Priority flag styles */
+  .priority-flag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+  
+  .priority-flag.low {
+    background-color: #2196f3; /* Blue */
+  }
+  
+  .priority-flag.normal {
+    background-color: #4caf50; /* Green */
+  }
+  
+  .priority-flag.high {
+    background-color: #ff9800; /* Orange */
+  }
+  
+  .priority-flag.urgent {
+    background-color: #f44336; /* Red */
+  }
+  
+  /* Centered loading spinner */
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Button styling */
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4fa94d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #3c8d3d;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .task-details-container {
+      padding: 1rem;
+    }
+  
+    .task-details-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .task-details-container p {
+      font-size: 0.9rem;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 0.8rem;
+    }
+  }
+
+  .edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+  

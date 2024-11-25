@@ -1,0 +1,48 @@
+.space-details {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 40px;
+    background-color: #f7f9fc;
+    min-height: 100vh; /* Full viewport height */
+    text-align: center;
+  }
+  
+  .space-details h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .folders-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .folder-card {
+    background-color: white;
+    border: 1px solid #dfe3e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .folder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .folder-card h3 {
+    font-size: 1.5rem;
+    color: #1abc9c;
+    margin-bottom: 10px;
+  }
+  
+  .folder-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

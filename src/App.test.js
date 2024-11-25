@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders login page header', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  // Use getByRole to target the heading
+  const headerElement = screen.getByRole('heading', { name: /login/i });
+  expect(headerElement).toBeInTheDocument();
 });

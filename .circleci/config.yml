@@ -1,0 +1,19 @@
+version: 2.1  # Specify CircleCI version
+jobs:
+  test:  # Define the 'test' job
+    docker:
+      - image: circleci/node:14  # Use a Node.js Docker image
+    steps:
+      - checkout  # Check out the code from your repository
+      - run:
+          name: Install Dependencies
+          command: npm install  # Install project dependencies
+      - run:
+          name: Run Tests
+          command: npm test  # Run your tests using npm
+
+workflows:
+  version: 2
+  test-workflow:
+    jobs:
+      - test
